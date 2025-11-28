@@ -1,0 +1,18 @@
+"use client"
+
+import type React from "react"
+
+import { BottomNavigation } from "@/components/bottom-navigation"
+
+export default function MainLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <div className="flex flex-col min-h-screen bg-gray-50">
+      <main className="flex-1 pb-20">{children}</main>
+      <BottomNavigation />
+    </div>
+  )
+}
